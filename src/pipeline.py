@@ -20,7 +20,7 @@ def load_pipeline() -> StableDiffusionXLPipeline:
 
     pipeline = TgateSDXLDeepCacheLoader(
                    pipeline,
-                          cache_interval=3,
+                          cache_interval=4,
                                  cache_branch_id=0,
                                  ).to("cuda")
     pipeline(prompt="")
